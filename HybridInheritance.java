@@ -29,5 +29,15 @@ public class HybridInheritance extends Parent{
         obj1.method1();
         obj1.method2();
         obj1.pmethod();
+        Child obj2 = new Child();
+        obj2.childmethod();
+        obj2.method1();
+        obj2.method2();
+        obj2.pmethod();
+    }
+}
+class Child extends Parent{
+    public void childmethod(){
+        System.out.println("This is child2");
     }
 }
